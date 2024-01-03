@@ -1,0 +1,14 @@
+from pynput.mouse import Listener
+import os
+
+
+def on_click(x, y, button, pressed):
+        
+    if pressed:
+        PATH = "/home/alfonsozylk/2024/CDPDataDev/screen_rec/screenshots/"
+
+        os.system("scrot -z " + PATH)
+
+        
+with Listener(on_click=on_click) as listener:
+    listener.join()
